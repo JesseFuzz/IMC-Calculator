@@ -7,20 +7,24 @@
 
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>IMC</title>
+    <title>IMC | XP Educação</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/52/PNG/256/signofhealth_medical_10741.png">
   </head>
   <body>
     <div id="left">
-      <h1>Cálculo de Índice de Massa Corpórea</h1>
+      <h1>Calcule seu IMC</h1>
+      <hr>
       <br>
-      <label for="input-weight">Peso (kg):&nbsp;</label></br id="quebra">
-      <input id="input-weight" type="number" step=".1"/>
+    <p class="weight">
+      <label for="input-weight">&nbsp;</label></br id="quebra">
+      <input id="input-weight" type="number" step=".1" placeholder="peso (kg)"/>
     </p>
-    <p>
-      <label for="input-height">Altura (m):</label><br id="quebra">
-      <input id="input-height" type="number" step=".01"/>
+    <p class="height">
+      <label for="input-height"></label><br id="quebra">
+      <input id="input-height" type="number" step=".01" placeholder="altura (m)"/>
     </p>
-    <p>
+    
+    <p class="calcular">
       <button id="calculate-imc">Calcular IMC</button>
     </p>
     <p id="result">O seu IMC é: <strong id="imc-result"></strong></p>

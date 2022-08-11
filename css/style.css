@@ -2,10 +2,22 @@ body {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  background-image: url(https://cdn1.unasp.br/home/2020/09/22093002/purple-bg.jpg);
 }
 
 #result {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
 }
 
 input {
@@ -23,4 +35,48 @@ label {
 
 #right {
   align-items: right;
+}
+
+.height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.calcular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+#input-height {
+  border-radius: 10px;
+  outline: none;
+}
+#input-weight {
+  border-radius: 10px;
+}
+
+#calculate-imc {
+  border: none;
+  margin: 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: blue;
+  font-weight: 350;
+  cursor: pointer;
 }
