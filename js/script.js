@@ -34,11 +34,35 @@ var calc = document.getElementById('calculate-imc');
 var imcResult = document.querySelector('#imc-result');
 
 function calculateImc(weight1, height1) {
-  return weight1 / (height1 * height1);
+  var result = weight1 / (height1 * height1);
+  return result;
 }
 
 calc.addEventListener('click', () => {
-  imcResult.textContent = calculateImc(weight1.value, height1.value)
-    .toFixed(2)
-    .replace('.', ',');
+  var res = calculateImc(weight1.value, height1.value);
+
+  if (res >= 0 && res <= 16.9) {
+    classification = `Você está muito abaixo do peso.`;
+  }
+  if (res >= 17 && res <= 18.4) {
+    classification = `Você está abaixo do peso.`;
+  }
+  if (res >= 18.5 && res <= 24.9) {
+    classification = `Você está com o peso normal.`;
+  }
+  if (res >= 25 && res <= 29.9) {
+    classification = `Você está acima do peso.`;
+  }
+  if (res >= 30 && res <= 34.9) {
+    classification = `Você está com obesidade grau I.`;
+  }
+  if (res >= 35 && res <= 40) {
+    classification = `Você está com obesidade grau II.`;
+  }
+  if (res > 40) {
+    classification = `Você está com obesidade grau III.`;
+  }
+
+  imcResult.textContent = res.toFixed(2).replace('.', ',');
+  classification1.textContent = classification;
 });

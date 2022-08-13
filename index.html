@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>IMC | XP Educação</title>
-    <link rel="icon" href="https://cdn.icon-icons.com/icons2/52/PNG/256/signofhealth_medical_10741.png">
+    <link rel="icon" href="http://clinicauraemega.com.br/wp-content/uploads/2019/04/imc_button.png">
   </head>
   <body>
-    <div id="left">
-      <h1>Calcule seu IMC</h1>
-      <hr>
-      <br>
-    <p class="weight">
-      <label for="input-weight">&nbsp;</label></br id="quebra">
-      <input id="input-weight" type="number" step=".1" placeholder="peso (kg)"/>
-    </p>
-    <p class="height">
-      <label for="input-height"></label><br id="quebra">
-      <input id="input-height" type="number" step=".01" placeholder="altura (m)"/>
-    </p>
-    
-    <p class="calcular">
-      <button id="calculate-imc">Calcular IMC</button>
-    </p>
-    <p id="result">O seu IMC é: <strong id="imc-result"></strong></p>
-  </div>   
+    <container>
+      <div id="left">
+        <img src="https://img.freepik.com/vetores-premium/exercicio-esportivo-em-casa-pessoas-fazendo-exercicios-internos-homem-mulher-realizando-atividades-esportivas-treino-de-fitness_141192-3777.jpg?w=1060" alt="pessoa praticando exercício">
+      </div>
+      <div id="right">
+        <div class="content">
+            <h1>Calcule seu IMC</h1>
+            <hr>
+            <br>  
+          <p class="weight">
+            <label for="input-weight">Digite o seu peso: &nbsp;</label></br id="quebra">
+            <input id="input-weight" type="number" step=".1" placeholder="(kg)"/>
+          </p>
+          <p class="height">
+            <label for="input-height">Digite a sua altura: </label><br id="quebra">
+            <input id="input-height" type="number" step=".01" placeholder="(m)"/>
+          </p>
+          <p class="calcular">
+            <button id="calculate-imc">Calcular IMC</button>
+          </p>
+          <p id="result">O seu IMC é: <strong id="imc-result"></strong></p>
+          <p id="classification1"></p>
+      </div>
+     </div>
+    </container>
     <script defer src="./js/script.js"></script>
   </body>
 </html>

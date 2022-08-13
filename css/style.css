@@ -1,17 +1,92 @@
-body {
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  /* zerei tudo  */
+}
+
+container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1200px;
+  min-height: auto;
+  border-radius: 10px;
+}
+
+div {
+  display: inline-block;
+  /* todas as divs ficaram lado-a-lado */
+}
+
+img {
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  height: 500px;
+  border-radius: 10px 0 0 10px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 400px;
+}
+
+h1 {
+  color: #e99f34;
+}
+
+#calculate-imc {
+  border: none;
+  margin: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #e99f34;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* body {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: lightgray;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 
   flex-direction: column;
 
-  background-image: url(https://cdn1.unasp.br/home/2020/09/22093002/purple-bg.jpg);
-}
+  background-image: url(https://img.freepik.com/vetores-premium/exercicio-esportivo-em-casa-pessoas-fazendo-exercicios-internos-homem-mulher-realizando-atividades-esportivas-treino-de-fitness_141192-3777.jpg?w=1060);
+} */
+/* img {
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  height: 600px;
+  border-radius: 10px 0 0 10px;
+} */
 
-#result {
+/* .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1200px;
+  min-height: auto;
+  border-radius: 10px;
+  background-color: #ebdef0;
+} */
+
+/* #result {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -27,17 +102,23 @@ input {
 
 label {
   font-family: 'JetBrains Mono';
-}
+} */
 
-#left {
-  align-items: flex-start;
+/* #left {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
 }
 
 #right {
-  align-items: right;
-}
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+} */
 
-.height {
+/* .height {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,9 +132,9 @@ label {
   align-items: center;
 
   flex-direction: column;
-}
+} */
 
-.calcular {
+/* .calcular {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,9 +148,9 @@ label {
 }
 #input-weight {
   border-radius: 10px;
-}
+} */
 
-#calculate-imc {
+/* #calculate-imc {
   border: none;
   margin: 15px;
   font-size: 15px;
@@ -79,4 +160,20 @@ label {
   background-color: blue;
   font-weight: 350;
   cursor: pointer;
+} */
+
+/* div {
+  display: inline-block;
+  todas as divs ficaram lado-a-lado
+} */
+
+/* #right {
+  width: 100px;
+  height: 100px;
+  align-items: center;
 }
+#left {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+} */
